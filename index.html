@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCraft - Opening Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <div id="threejs-container"></div>
+    <div class="overlay">
+        <div class="container">
+            <header>
+                <div class="logo-container">
+                    <img src="https://i.postimg.cc/MZmYXDnK/Vibe-Craft-Logo-Design.png" alt="VibeCraft Logo" class="logo-image">
+                </div>
+                <h2 class="tagline">Connecting People with Intelligent Design.</h2>
+            </header>
+
+            <main>
+                <div id="typingText" style="display: none;">🚧 Opening Soon...</div>
+                <h1 id="typedText"></h1>
+                <p class="description">
+                    VibeCraft is where human creativity meets AI. We're building tools that inspire, design, and connect – powered by smart technology.
+                </p>
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="days">00</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="hours">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="minutes">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="seconds">00</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+
+                <div class="newsletter-form">
+                    <form id="signupForm">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Notify Me</button>
+                    </form>
+                    <div id="successMessage" class="success-message hidden">
+                        Thanks! We'll keep you posted about our launch 🚀
+                    </div>
+                </div>
+
+                <div class="intro-section">
+                    <div class="intro-card">
+                        <h3>Coming Soon</h3>
+                        <p>We're crafting something special.</p>
+                    </div>
+                    <div class="intro-card">
+                        <h3>Working with AI</h3>
+                        <p>Our tools are powered by intelligence and intuition.</p>
+                    </div>
+                    <div class="intro-card">
+                        <h3>My Tools</h3>
+                        <p>Explore the technologies behind VibeCraft.</p>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/vibecraft_design/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/VibeCraft_d" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/vibecraftdesign" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="threejs.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
